@@ -6,6 +6,9 @@
     <title>My Activities</title>
 
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!-- import from bootstrap   -->
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
           rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
@@ -15,7 +18,9 @@
             integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
             crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" media="(min-width: 640px)" href="index_pc.css">
+    <link rel="stylesheet" media="(max-width: 640px)" href="index_mob.css">
+
 </head>
 
 
@@ -32,21 +37,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
     <script src="index.js"></script>
 
-
     <h1 style="text-align:center">
         <span style="color: aquamarine">
         <b>My Activities</b>
         </span>
     </h1>
 
-    <hr class="line">
+<!--    <hr class="line">-->
 
     <!--Alert-->
-    <div class="d-flex justify-content-center">
-        <div class="mt-1 alert alert-primary" role="alert">
-            This page is still under construction!!!
-        </div>
-    </div>
+<!--    <div class="d-flex justify-content-center">-->
+<!--        <div class="mt-1 alert alert-primary" role="alert">-->
+<!--            This page is still under construction!!!-->
+<!--        </div>-->
+<!--    </div>-->
 
     <div class="body-text">
         This page was created for learning HTML, CSS, and javascript, so the content may change suddenly.<br>
@@ -54,27 +58,28 @@
     </div>
 
     <div class="container">
+
         <div class="box">
 
-        <div class="shadow-sm mt-0 d-flex justify-content-center">
-        <span style="font-size: x-large; ">
-            <b>Latest Tracks</b>
-        </span></div>
+        <div class="d--flex justify-content-start">
+            <span style="font-size: xx-large; color: aliceblue">
+                <b>Latest Tracks</b>
+            </span>
+        </div>
 
         <hr class="line">
 
-
         <div class="accordion" id="accordionExample">
-
             <div class="accordion-item">
 
                 <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                             aria-expanded="true" aria-controls="collapseOne">
-
-                        <div class="shadow-none">Latest Tracks</div>
-
+                        <span style="font-size: large">
+                            <b>July 2021</b>
+                        </span>
                     </button>
+
                 </h2>
 
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
