@@ -39,8 +39,8 @@
     }
 
     .body-margin {
-        margin: 30px;
-        padding: 20px;
+        margin: 2px;
+        padding: 2px;
     }
 
     .background {
@@ -62,7 +62,8 @@
         border-radius: 5px;
         padding: 10px;
         text-align: start;
-        position: center;
+        /*display: inline;*/
+        position: absolute;
         z-index: 1;
         color: #222222;
     }
