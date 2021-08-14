@@ -18,15 +18,24 @@
     }
 
     .music-item {
-        font-size: x-large;
-        font-family: Arial, serif;
+        font-size: large;
+        font-family: "Times New Roman", serif;
     }
 
     .body-text {
         font-family: Arial, serif;
-        font-size: large;
+        font-size: initial;
         color: aqua;
         text-align: center;
+    }
+    .section{
+        font-family: Arial, serif;
+        font-size: large;
+        color: aliceblue;
+    }
+    .accordion-header-title{
+        font-size: initial;
+        color: rgb(0, 80, 255);
     }
 
     .body-margin {
@@ -51,7 +60,7 @@
     .box {
         background: rgba(136, 136, 136, 0.3);
         border-radius: 5px;
-        padding: 40px;
+        padding: 10px;
         text-align: start;
         position: center;
         z-index: 1;
@@ -60,10 +69,10 @@
 
     .container {
         background-color: transparent;
-        display: inline;
+        display: block;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 50vh;
         width: 200vh;
 
     }

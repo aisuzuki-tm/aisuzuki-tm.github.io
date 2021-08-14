@@ -37,6 +37,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
     <script src="index.js"></script>
 
+    <!--Title-->
     <h1 style="text-align:center">
         <span style="color: aquamarine">
         <b>My Activities</b>
@@ -53,8 +54,15 @@
 <!--    </div>-->
 
     <div class="body-text">
+        <p>
         This page was created for learning HTML, CSS, and javascript, so the content may change suddenly.<br>
+        </p>
+    </div>
 
+    <div class="section">
+        <ul>
+            <li>Music</li>
+        </ul>
     </div>
 
     <div class="container">
@@ -62,33 +70,33 @@
         <div class="box">
 
         <div class="d--flex justify-content-start">
-            <span style="font-size: xx-large; color: aliceblue">
+            <div class="section">
                 <b>Latest Tracks</b>
-            </span>
+            </div>
         </div>
 
         <hr class="line">
 
         <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
+            <div class="accordion-item" style="background-color: rgba(230, 230, 230, 0.65)">
 
                 <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                            aria-expanded="true" aria-controls="collapseOne">
-                        <span style="font-size: large">
+                            aria-expanded="true" aria-controls="collapseOne" style="background-color: rgba(130, 200, 255, 0.3)">
+                        <div class="accordion-header-title">
                             <b>July 2021</b>
-                        </span>
+                        </div>
                     </button>
 
                 </h2>
 
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
 
                     <div class="accordion-body">
 
                         <!-- Items -->
                         <div style="text-align: center" class="music-item">
-                            Xorn -arranged-<br>
+                            Xorn -arranged-  /  Orchestra<br>
                             <audio controls src="https://raw.githubusercontent.com/aisuzuki-tm/aisuzuki-tm.github.io/master/mp3/xorn.mp3">
                                 <p>This browser does not support playing sound sources.</p>
                             </audio>
@@ -102,7 +110,7 @@
 <!--                        </div>-->
 
                         <div style="text-align: center" class="music-item">
-                            Entropy<br>
+                            Entropy  /  (Henteko-step)<br>
                             <audio controls src="https://raw.githubusercontent.com/aisuzuki-tm/aisuzuki-tm.github.io/master/mp3/chime.mp3">
                                 <p>This browser does not support playing sound sources.</p>
                             </audio>
