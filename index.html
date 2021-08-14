@@ -1,5 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <title>My Activities</title>
     <meta charset="utf-8" />
@@ -7,10 +9,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
           rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
           crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
+
+    <canvas class="background"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+
     <link rel="stylesheet" href="index.css">
 </head>
 
-<body>
+<body class="body-margin">
+
     <h1 style="text-align:center">
         <b>My Activities</b>
     </h1>
@@ -28,23 +39,46 @@
 
     <hr class="line">
 
-        <div style="text-align: center" class="music-item">
-            A Birth<br>
-            <audio controls src="https://raw.githubusercontent.com/aisuzuki-tm/aisuzuki-tm.github.io/master/mp3/Birth.mp3">
-                <p>This browser does not support playing sound sources.</p>
-            </audio>
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                    Latest Tracks
+                </button>
+            </h2>
+
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                    <!-- Items -->
+                    <div style="text-align: center" class="music-item">
+                        A Birth<br>
+                        <audio controls src="https://raw.githubusercontent.com/aisuzuki-tm/aisuzuki-tm.github.io/master/mp3/Birth.mp3">
+                            <p>This browser does not support playing sound sources.</p>
+                        </audio>
+                    </div>
+
+                    <div style="text-align: center" class="music-item">
+                        Entropy<br>
+                        <audio controls src="https://raw.githubusercontent.com/aisuzuki-tm/aisuzuki-tm.github.io/master/mp3/chime.mp3">
+                            <p>This browser does not support playing sound sources.</p>
+                        </audio>
+                    </div>
+
+
+                </div>
+            </div>
         </div>
-
-        <div style="text-align: center" class="music-item">
-            TBD<br>
-            <audio controls src="https://raw.githubusercontent.com/aisuzuki-tm/aisuzuki-tm.github.io/master/mp3/chime.mp3">
-                <p>This browser does not support playing sound sources.</p>
-            </audio>
-        </div>
-
-
-
+    </div>
 
 </body>
+
+
+
+
+
 
 </html>

@@ -9,3 +9,15 @@
     font-family: Arial, serif;
 }
 
+.body-margin{
+    margin: 30px;
+    padding: 18px;
+}
+
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
