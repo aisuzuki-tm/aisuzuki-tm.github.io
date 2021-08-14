@@ -1,0 +1,4 @@
+AuthType     Basic
+AuthName     "moka"
+AuthUserFile https://raw.githubusercontent.com/aisuzuki-tm/aisuzuki-tm.github.io/master/basic/.htpasswd
+require valid-user
