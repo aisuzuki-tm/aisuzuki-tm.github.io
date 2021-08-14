@@ -10,6 +10,13 @@
     font-family: Arial, serif;
 }
 
+.body-text{
+    font-family: Arial, serif;
+    font-size: large;
+    color: aqua;
+    text-align: center;
+}
+
 .body-margin{
     margin: 30px;
     padding: 20px;
@@ -28,6 +35,7 @@ body {
     font-family: Arial, cursive;
     background: #222222;
 }
+
 .container {
     display: flex;
     justify-content: center;
